@@ -123,6 +123,55 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &121774472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 121774474}
+  - component: {fileID: 121774473}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &121774473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121774472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3b5c8d447cc2ca4eb34ae4bd0c9612f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tableLayout: {fileID: 11400000, guid: cdf133557151c50469a52f18cba681cf, type: 2}
+  students: []
+  tablePrefab: {fileID: 8962197166052329754, guid: c68ab4143f461dc479c3aa3a942a32d4, type: 3}
+  chairPrefab: {fileID: 1933596421293871729, guid: 2721ba067c58bd3459f42c0d49e69b5d, type: 3}
+  sitzplanPrefab: {fileID: 1050596282299388308, guid: 68014560d640ca34ba80ba8a81e137a1, type: 3}
+--- !u!4 &121774474
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121774472}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.2827713, y: 1.6864196, z: 154.33447}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &291989746
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,7 +233,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -209,13 +258,13 @@ Transform:
   m_GameObject: {fileID: 291989746}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 6.93, y: 0, z: 2.55}
+  m_LocalScale: {x: 1.4886, y: 0.56352, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1253443369
+--- !u!1001 &2798310863916618430
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -225,7 +274,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1050596282299388308, guid: 68014560d640ca34ba80ba8a81e137a1, type: 3}
       propertyPath: m_Name
-      value: Table&Chair
+      value: sitzplatzPrefab
       objectReference: {fileID: 0}
     - target: {fileID: 1591949779231383995, guid: 68014560d640ca34ba80ba8a81e137a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -277,4 +326,5 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 291989749}
-  - {fileID: 1253443369}
+  - {fileID: 121774474}
+  - {fileID: 2798310863916618430}

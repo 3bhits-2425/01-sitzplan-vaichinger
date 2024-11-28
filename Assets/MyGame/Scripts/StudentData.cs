@@ -1,10 +1,10 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "StudentData", menuName = "StudentData", order = 1)]
-public class StudentData : MonoBehaviour
+[CreateAssetMenu(fileName = "NewStudent", menuName = "Seatplan/Student")]
+public class StudentData : ScriptableObject
 {
     public string studentName;
-    public Color eyecolor;
+    public Color eyeColor;
     public Sprite studentImage;
     public AudioClip studenClip;
 }
