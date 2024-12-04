@@ -15,13 +15,9 @@ public class Manager : MonoBehaviour
             {
                 Vector3 tablePosition = new Vector3(col * tableLayout.tableSpacing, 0, row * tableLayout.tableSpacing);
                 GameObject table = Instantiate(tablePrefab, tablePosition, Quaternion.identity, transform);
+                GameObject chair1 = Instantiate(chairPrefab);
             }
            
         }
-    }
-
-    void Update()
-    {
-        
     }
 }

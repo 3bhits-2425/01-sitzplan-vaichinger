@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9da08f491530b5e43ac3ed553a2b4c2b, type: 3}
-  m_Name: Student 1
+  m_Name: wagg
   m_EditorClassIdentifier: 
-  studentName: Vinzent Aichinger
+  studentName: 
   eyeColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
-  studentImage: {fileID: 21300000, guid: 6007b91048b24da4c8ceb2893a890f66, type: 3}
-  studenClip: {fileID: 8300000, guid: 84016e3c843555047b19b7adfa957e4a, type: 3}
+  studentImage: {fileID: 0}
+  studenClip: {fileID: 0}
