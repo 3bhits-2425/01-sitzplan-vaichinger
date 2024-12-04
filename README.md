@@ -4,3 +4,7 @@ Details: Mit Hilfe vorgefertigte Prefabs von Code wird ein 3D - Sitzplan über e
 
 ## Was habe ich alles gelernt?
 - Wie man die Sachen in Unity mit Hilfe von C# verknüpft
+
+![IMG_3263](https://github.com/user-attachments/assets/49e8d967-8d7e-4808-aa2c-cd05c35d1d6b)
+
+https://github.com/user-attachments/assets/7e512612-7234-4149-a92c-3589a2f8d8ef
