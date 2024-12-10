@@ -22,23 +22,28 @@ public class Manager : MonoBehaviour
     }
     private void PlaceChairsAtTable(GameObject table)
     {
-        // Suche nach ChairPos1 und ChairPos2 im Tisch-Objekt
-        Transform chairPos1 = table.transform.Find("ChairPos1");
-        Transform chairPos2 = table.transform.Find("ChairPos2");
+        Transform chairPos1 = table.transform.Find("chairPos1");
+        Transform chairPos2 = table.transform.Find("chairPos2");
 
-        // Prüfen, ob die Positionen existieren
         if (chairPos1 != null)
         {
-            Instantiate(chairPrefab, chairPos1.position, chairPos1.rotation, table.transform);
+            GameObject chair1 = Instantiate(chairPrefab, chairPos1.position, chairPos1.rotation, table.transform);
+            chair1.transform.localPosition = chairPos1.localPosition; // Ensure local alignment
+        }
+        else
+        {
+            Debug.LogWarning("ChairPos1 not found");
         }
 
         if (chairPos2 != null)
         {
-            Instantiate(chairPrefab, chairPos2.position, chairPos2.rotation, table.transform);
+            GameObject chair2 = Instantiate(chairPrefab, chairPos2.position, chairPos2.rotation, table.transform);
+            chair2.transform.localPosition = chairPos2.localPosition; // Ensure local alignment
         }
         else
         {
-            Debug.LogWarning("ChairPos nicht gefunden");
+            Debug.LogWarning("ChairPos2 not found");
         }
     }
+
 }

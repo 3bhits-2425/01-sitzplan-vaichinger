@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9da08f491530b5e43ac3ed553a2b4c2b, type: 3}
   m_Name: dinm
   m_EditorClassIdentifier: 
-  studentName: 
+  studentName: Dinc Medine
   eyeColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
   studentImage: {fileID: 0}
   studenClip: {fileID: 0}
