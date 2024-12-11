@@ -27,8 +27,7 @@ public class Manager : MonoBehaviour
 
         if (chairPos1 != null)
         {
-            GameObject chair1 = Instantiate(chairPrefab, chairPos1.position, chairPos1.rotation, table.transform);
-            chair1.transform.localPosition = chairPos1.localPosition; // Ensure local alignment
+            Instantiate(chairPrefab, chairPos1.position, chairPos1.rotation, table.transform);
         }
         else
         {
@@ -37,8 +36,7 @@ public class Manager : MonoBehaviour
 
         if (chairPos2 != null)
         {
-            GameObject chair2 = Instantiate(chairPrefab, chairPos2.position, chairPos2.rotation, table.transform);
-            chair2.transform.localPosition = chairPos2.localPosition; // Ensure local alignment
+            Instantiate(chairPrefab, chairPos2.position, chairPos2.rotation, table.transform);
         }
         else
         {
