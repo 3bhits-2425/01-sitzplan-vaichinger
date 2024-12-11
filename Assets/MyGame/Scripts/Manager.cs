@@ -6,6 +6,7 @@ public class Manager : MonoBehaviour
     [SerializeField] private StudentData[] students;
     [SerializeField] private GameObject tablePrefab;
     [SerializeField] private GameObject chairPrefab;
+    [SerializeField] private GameObject humanPrefab;
     [SerializeField] private GameObject sitzplanPrefab;
     void Start()
     {
@@ -28,6 +29,8 @@ public class Manager : MonoBehaviour
         if (chairPos1 != null)
         {
             Instantiate(chairPrefab, chairPos1.position, chairPos1.rotation, table.transform);
+            Transform humanPos = chairPos1.Find("posHuman");
+            Instantiate(humanPrefab, humanPos.position, humanPos.rotation, table.transform);
         }
         else
         {
@@ -37,11 +40,15 @@ public class Manager : MonoBehaviour
         if (chairPos2 != null)
         {
             Instantiate(chairPrefab, chairPos2.position, chairPos2.rotation, table.transform);
+            Transform humanPos = chairPos2.Find("posHuman");
+            Instantiate(humanPrefab, humanPos.position, humanPos.rotation, table.transform);
         }
         else
         {
             Debug.LogWarning("ChairPos2 not found");
         }
+
+        
     }
 
 }

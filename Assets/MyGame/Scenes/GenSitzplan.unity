@@ -159,6 +159,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 651aa8e018ba2684c847f56d406ed940, type: 2}
   tablePrefab: {fileID: 8962197166052329754, guid: c68ab4143f461dc479c3aa3a942a32d4, type: 3}
   chairPrefab: {fileID: 1933596421293871729, guid: 2721ba067c58bd3459f42c0d49e69b5d, type: 3}
+  humanPrefab: {fileID: 4507599085328278654, guid: 2dfd46b5714b2944c8bfe46d5bdd710b, type: 3}
   sitzplanPrefab: {fileID: 1050596282299388308, guid: 68014560d640ca34ba80ba8a81e137a1, type: 3}
 --- !u!4 &121774474
 Transform:
