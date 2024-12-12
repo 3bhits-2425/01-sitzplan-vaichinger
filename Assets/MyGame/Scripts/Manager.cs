@@ -18,19 +18,19 @@ public class Manager : MonoBehaviour
                 GameObject table = Instantiate(tablePrefab, tablePosition, Quaternion.identity, transform);
                 PlaceChairsAtTable(table);
             }
-           
         }
     }
     private void PlaceChairsAtTable(GameObject table)
     {
         Transform chairPos1 = table.transform.Find("chairPos1");
         Transform chairPos2 = table.transform.Find("chairPos2");
+        Transform humanPos1 = table.transform.Find("humanPos1");
+        Transform humanPos2 = table.transform.Find("humanPos2");
 
         if (chairPos1 != null)
         {
             Instantiate(chairPrefab, chairPos1.position, chairPos1.rotation, table.transform);
-            Transform humanPos = chairPos1.Find("posHuman");
-            Instantiate(humanPrefab, humanPos.position, humanPos.rotation, table.transform);
+            Instantiate(humanPrefab, humanPos1.position, humanPos1.rotation, table.transform);
         }
         else
         {
@@ -40,15 +40,11 @@ public class Manager : MonoBehaviour
         if (chairPos2 != null)
         {
             Instantiate(chairPrefab, chairPos2.position, chairPos2.rotation, table.transform);
-            Transform humanPos = chairPos2.Find("posHuman");
-            Instantiate(humanPrefab, humanPos.position, humanPos.rotation, table.transform);
+            Instantiate(humanPrefab, humanPos2.position, humanPos2.rotation, table.transform);
         }
         else
         {
             Debug.LogWarning("ChairPos2 not found");
         }
-
-        
     }
-
 }
